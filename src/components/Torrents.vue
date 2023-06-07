@@ -201,13 +201,14 @@
             <td>{{ row.item.num_leechs }}/{{ row.item.num_incomplete }}</td>
             <td>{{ row.item.dlspeed | formatNetworkSpeed }}</td>
             <td>{{ row.item.upspeed | formatNetworkSpeed }}</td>
-            <td>{{ row.item.eta | formatDuration({dayLimit: 100}) }}</td>
+            <td>{{ row.item.eta | formatDuration({ dayLimit: 100 }) }}</td>
             <td>{{ row.item.ratio.toFixed(2) }}</td>
             <td>
               <span :title="row.item.added_on | formatTimestamp">
                 {{ row.item.added_on | formatAsDuration }} ago
               </span>
             </td>
+            <td>{{ row.item.save_path }}</td>
           </tr>
         </template>
       </v-data-table>
@@ -400,6 +401,7 @@ export default class Torrents extends Vue {
     { text: tr('eta'), value: 'eta' },
     { text: tr('ratio'), value: 'ratio' },
     { text: tr('added_on'), value: 'added_on' },
+    { text: tr('save_path'), value: 'save_path' },
   ]
 
   readonly footerProps = {
