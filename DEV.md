@@ -2,6 +2,7 @@
 
 ## Project setup
 ```
+yarn set version 3.5.0
 yarn install
 ```
 
