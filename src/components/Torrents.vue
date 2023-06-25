@@ -347,6 +347,7 @@ function getStateInfo(state: string) {
       'allCategories',
       'torrentGroupByCategory',
       'torrentGroupByTag',
+      'torrentGroupBySavePath',
       'torrentGroupBySite',
       'torrentGroupByState',
     ]),
@@ -429,6 +430,7 @@ export default class Torrents extends Vue {
   allTags!: Tag[]
   torrentGroupByCategory!: {[category: string]: Torrent[]}
   torrentGroupByTag!: {[tag: string]: Torrent[]}
+  torrentGroupBySavePath!: {[savepath: string]: Torrent[]}
   torrentGroupBySite!: {[site: string]: Torrent[]}
   torrentGroupByState!: {[state: string]: Torrent[]}
   filter!: TorrentFilter
@@ -462,6 +464,9 @@ export default class Torrents extends Vue {
     }
     if (this.filter.tag !== null) {
       list = intersection(list, this.torrentGroupByTag[this.filter.tag]);
+    }
+    if (this.filter.savepath !== null) {
+      list = intersection(list, this.torrentGroupBySavePath[this.filter.savepath]);
     }
     if (this.filter.state !== null) {
       list = intersection(list, this.torrentGroupByState[this.filter.state]);
