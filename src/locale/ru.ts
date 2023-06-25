@@ -43,6 +43,7 @@ export default {
   eta: 'Осталось',
   ratio: 'Ратио',
   added_on: 'Добавлен',
+  last_activity: 'Послед. активность',
   save_path: 'Путь сохранения',
 
   settings: 'Настройки',

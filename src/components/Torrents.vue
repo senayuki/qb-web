@@ -208,6 +208,11 @@
                 {{ row.item.added_on | formatAsDuration }} ago
               </span>
             </td>
+            <td>
+              <span :title="row.item.last_activity | formatTimestamp">
+                {{ row.item.last_activity | formatAsDuration }} ago
+              </span>
+            </td>
             <td>{{ row.item.save_path }}</td>
           </tr>
         </template>
@@ -401,6 +406,7 @@ export default class Torrents extends Vue {
     { text: tr('eta'), value: 'eta' },
     { text: tr('ratio'), value: 'ratio' },
     { text: tr('added_on'), value: 'added_on' },
+    { text: tr('last_activity'), value: 'last_activity' },
     { text: tr('save_path'), value: 'save_path' },
   ]
 

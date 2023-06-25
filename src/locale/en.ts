@@ -44,6 +44,7 @@ export default {
   eta: 'ETA',
   ratio: 'Ratio',
   added_on: 'Added On',
+  last_activity: 'Last Activity',
   save_path: 'Save Path',
 
   settings: 'Settings',

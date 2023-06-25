@@ -44,6 +44,7 @@ export default {
   eta: 'Resterende Tijd',
   ratio: 'Deelverhouding',
   added_on: 'Toegevoegd Op',
+  last_activity: 'Laatste activiteit',
   save_path: 'Opslagpad',
 
   settings: 'Instellingen',
