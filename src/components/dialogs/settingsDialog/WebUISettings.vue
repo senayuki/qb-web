@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h4>{{ $t("preferences.webui_remote_control") }}}</h4>
+    <h4>{{ $t("preferences.webui_remote_control") }}</h4>
     <v-divider />
     <v-row
       dense

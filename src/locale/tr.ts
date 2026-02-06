@@ -43,6 +43,7 @@ export default {
   eta: 'TBS',
   ratio: 'Oran',
   added_on: 'Eklenme',
+  last_activity: 'Son Etkinlik',
   save_path: 'Kaydetme yolu',
 
   settings: 'Ayarlar',
